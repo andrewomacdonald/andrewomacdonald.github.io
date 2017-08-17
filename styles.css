@@ -90,10 +90,10 @@ html, body{
     justify-content: center;
     height: 100%;
     flex-direction: column;
-    -moz-animation: info-fadein 5s forwards;
-    -webkit-animation: info-fadein 5s forwards;
-    -ms-animation: info-fadein 5s forwards;
-    animation: info-fadein 5s forwards;
+    -moz-animation: info-fadein 8s forwards;
+    -webkit-animation: info-fadein 8s forwards;
+    -ms-animation: info-fadein 8s forwards;
+    animation: info-fadein 8s forwards;
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,6 +104,10 @@ html, body{
         height: 100%;
         flex-direction: column;
         padding-bottom: 14em;
+        -moz-animation: info-fadein 8s forwards;
+        -webkit-animation: info-fadein 8s forwards;
+        -ms-animation: info-fadein 8s forwards;
+        animation: info-fadein 8s forwards;
     }
     #name {
         font-size: 2.5em;
