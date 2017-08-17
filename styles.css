@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-size: 16px;
+    background-image: url(assets/naturebackground.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+#name {
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+#title {
+    font-size: 1.75em;
+    font-weight: 200;
+}
+
+.circle-border {
+    border-radius: 100%;
+    border: 1px solid black;
+
+}
+
+.button-box {
+    height: 5em;
+    width: 5em;
+    border: 0.1em solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.button-box i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*Basic Info Fade-In*/
+@-moz-keyframes info-fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes info-fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes info-fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes info-fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    -moz-animation: info-fadein 5s forwards;
+    -webkit-animation: info-fadein 5s forwards;
+    -ms-animation: info-fadein 5s forwards;
+    animation: info-fadein 5s forwards;
+}
+
+@media only screen and (max-width: 600px) {
+    .info {
+        display: flex; align-content;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        padding-bottom: 14em;
+    }
+    #name {
+        font-size: 2.5em;
+        font-weight: 1.5em;
+    }
+
+    #title {
+        font-size: 1.5em;
+        font-weight: 160;
+    }
+}
