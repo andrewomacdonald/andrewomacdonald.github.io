@@ -18,10 +18,10 @@ html, body{
     justify-content: center;
     height: 100%;
     flex-direction: column;
-    -moz-animation: info-fadein 8s forwards;
-    -webkit-animation: info-fadein 8s forwards;
-    -ms-animation: info-fadein 8s forwards;
-    animation: info-fadein 8s forwards;
+    -moz-animation: info-fadein 10s forwards;
+    -webkit-animation: info-fadein 10s forwards;
+    -ms-animation: info-fadein 10s forwards;
+    animation: info-fadein 10s forwards;
     /*-moz-animation-delay: info-fadein 20s;
     -webkit-animation-delay: info-fadein 20s;
     -ms-animation-delay: info-fadein 20s;
@@ -162,7 +162,7 @@ html, body{
     0% {
         opacity: 0;
     }
-    20% {
+    30% {
       opacity: 0;
     }
     100% {
@@ -174,7 +174,7 @@ html, body{
     0% {
         opacity: 0;
     }
-    20% {
+    30% {
       opacity: 0;
     }
     100% {
@@ -186,7 +186,7 @@ html, body{
     0% {
         opacity: 0;
     }
-    20% {
+    30% {
       opacity: 0;
     }
     100% {
@@ -198,7 +198,7 @@ html, body{
     0% {
         opacity: 0;
     }
-    20% {
+    30% {
       opacity: 0;
     }
     100% {
