@@ -22,6 +22,10 @@ html, body{
     -webkit-animation: info-fadein 8s forwards;
     -ms-animation: info-fadein 8s forwards;
     animation: info-fadein 8s forwards;
+    /*-moz-animation-delay: info-fadein 20s;
+    -webkit-animation-delay: info-fadein 20s;
+    -ms-animation-delay: info-fadein 20s;
+    animation-delay: info-fadein 20;*/
     padding-bottom: 10em;
 }
 
@@ -158,7 +162,9 @@ html, body{
     0% {
         opacity: 0;
     }
-
+    20% {
+      opacity: 0;
+    }
     100% {
         opacity: 1;
     }
@@ -168,7 +174,9 @@ html, body{
     0% {
         opacity: 0;
     }
-
+    20% {
+      opacity: 0;
+    }
     100% {
         opacity: 1;
     }
@@ -178,7 +186,9 @@ html, body{
     0% {
         opacity: 0;
     }
-
+    20% {
+      opacity: 0;
+    }
     100% {
         opacity: 1;
     }
@@ -188,7 +198,9 @@ html, body{
     0% {
         opacity: 0;
     }
-
+    20% {
+      opacity: 0;
+    }
     100% {
         opacity: 1;
     }
