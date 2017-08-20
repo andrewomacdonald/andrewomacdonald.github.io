@@ -1,17 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 html, body{
     height: 100%;
     font-size: 16px;
-    background-image: url(assets/naturebackground.jpg);
+    /*background-image: url(assets/naturebackground.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center top;*/
+    background-image:
+    radial-gradient(
+      circle farthest-side,
+      #FDEFB0,
+      #227B99
+    );
 }
 
-#name {
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    -moz-animation: info-fadein 8s forwards;
+    -webkit-animation: info-fadein 8s forwards;
+    -ms-animation: info-fadein 8s forwards;
+    animation: info-fadein 8s forwards;
+}
+
+
+/*CSS For name/title and links to github, linkedin, etc*/
+.name{
     font-size: 2.5em;
     font-weight: 200;
 }
@@ -19,12 +34,6 @@ html, body{
 #title {
     font-size: 1.75em;
     font-weight: 200;
-}
-
-.circle-border {
-    border-radius: 100%;
-    border: 1px solid black;
-
 }
 
 .button-box {
@@ -41,6 +50,104 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+/*End CSS For name/title, github, etc*/
+
+
+/*CSS For Project Box*/
+.projectContainer {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 30%;
+  height: 50%;
+  border-radius: 2em !important;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.projectHeader {
+  top: 0;
+  height: 1.5em;
+  width: 100%;
+}
+
+.projectContent {
+  overflow: auto;
+}
+
+#scrollArea::-webkit-scrollbar {
+  background-color: transparent;
+}
+#scrollArea::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background-color: rgba(39, 46, 52, 0.20);
+}
+.projectThumbnail {
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+  margin: 1.25em;
+  text-align: center;
+}
+.projectThumbnail p {
+  text-overflow: ellipsis;
+  width: 5em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/*End CSS For Project Box*/
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+    .info {
+        display: flex; align-content;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        -moz-animation: info-fadein 8s forwards;
+        -webkit-animation: info-fadein 8s forwards;
+        -ms-animation: info-fadein 8s forwards;
+        animation: info-fadein 8s forwards;
+    }
+    .name {
+        font-size: 2.5em;
+        font-weight: 1.5em;
+    }
+
+    #title {
+        font-size: 1.5em;
+        font-weight: 160;
+    }
+
+    .projectContainer {
+      background-color: rgba(0, 0, 0, 0.25);
+      width: 90%;
+      border-radius: 2em;
+      height: 50%;
+      margin: 1.2em;
+      vertical-align: top;
+    }
+    .projectThumbnail {
+      width: 4em;
+      height: 4em;
+      display: inline-block;
+      margin-right: 3em;
+      text-align: center;
+    }
+    .projectThumbnail i {
+      padding-left: 0.45em;
+      color: #3d3c3c;
+    }
+    .projectThumbnail p {
+      text-overflow: ellipsis;
+      width: 5em;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #3d3c3c;
+    }
 }
 
 /*Basic Info Fade-In*/
@@ -81,41 +188,5 @@ html, body{
 
     100% {
         opacity: 1;
-    }
-}
-
-.info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
-    -moz-animation: info-fadein 8s forwards;
-    -webkit-animation: info-fadein 8s forwards;
-    -ms-animation: info-fadein 8s forwards;
-    animation: info-fadein 8s forwards;
-}
-
-@media only screen and (max-width: 600px) {
-    .info {
-        display: flex; align-content;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        flex-direction: column;
-        padding-bottom: 14em;
-        -moz-animation: info-fadein 8s forwards;
-        -webkit-animation: info-fadein 8s forwards;
-        -ms-animation: info-fadein 8s forwards;
-        animation: info-fadein 8s forwards;
-    }
-    #name {
-        font-size: 2.5em;
-        font-weight: 1.5em;
-    }
-
-    #title {
-        font-size: 1.5em;
-        font-weight: 160;
     }
 }
