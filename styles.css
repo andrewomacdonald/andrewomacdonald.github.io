@@ -1,15 +1,15 @@
 html, body{
     height: 100%;
     font-size: 16px;
-    /*background-image: url(assets/naturebackground.jpg);
+    background-image: url(assets/naturebackground.jpg);
     background-size: cover;
-    background-position: center top;*/
-    background-image:
+    background-position: center top;
+    /*background-image:
     radial-gradient(
       circle farthest-side,
       #FDEFB0,
       #227B99
-    );
+    );*/
 }
 
 .info{
@@ -22,6 +22,7 @@ html, body{
     -webkit-animation: info-fadein 8s forwards;
     -ms-animation: info-fadein 8s forwards;
     animation: info-fadein 8s forwards;
+    padding-bottom: 10em;
 }
 
 
@@ -58,7 +59,7 @@ html, body{
 .projectContainer {
   background-color: rgba(0, 0, 0, 0.15);
   width: 30%;
-  height: 50%;
+  height: 25%;
   border-radius: 2em !important;
   margin: 1em;
   display: flex;
@@ -111,6 +112,7 @@ html, body{
         -webkit-animation: info-fadein 8s forwards;
         -ms-animation: info-fadein 8s forwards;
         animation: info-fadein 8s forwards;
+        padding-bottom:15em;
     }
     .name {
         font-size: 2.5em;
@@ -131,22 +133,23 @@ html, body{
       vertical-align: top;
     }
     .projectThumbnail {
-      width: 4em;
-      height: 4em;
+      width: 3em;
+      height: 3em;
       display: inline-block;
       margin-right: 3em;
       text-align: center;
     }
     .projectThumbnail i {
       padding-left: 0.45em;
-      color: #3d3c3c;
+      color: #0b2b5e;
+      opacity: 0.8;
     }
     .projectThumbnail p {
       text-overflow: ellipsis;
       width: 5em;
       overflow: hidden;
       white-space: nowrap;
-      color: #3d3c3c;
+      color: #0b2b5e;
     }
 }
 
