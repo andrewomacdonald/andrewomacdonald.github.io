@@ -11,7 +11,7 @@ UPDATE:
 
 KNOWN ISSUES:
 
--Scrolling through the projects container looks bad and doesn't work.
+-Scrolling through the projects container when in mobile landscape mode looks bad and doesn't work. Need to add some media queries for landscape mode. 
 
 -Scrollbar thumb flickers if moving too fast thanks to something strange going on in my directive I haven't figure out yet.
 
