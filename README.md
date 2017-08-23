@@ -19,4 +19,5 @@ KNOWN ISSUES:
 (NOTE: FIXED! YAY!)
 
 -Removed the link to my source code when in mobile view because everything I've tried for it looks terrible. Needs more work.
+(NOTE: FIXED)
 
