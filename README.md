@@ -21,3 +21,4 @@ KNOWN ISSUES:
 -Removed the link to my source code when in mobile view because everything I've tried for it looks terrible. Needs more work.
 (NOTE: FIXED)
 
+-Haven't figured out what's causing the scrollbar to appear on the main window and that tiny strip of background at the bottom of the page. Will fix it soon. 
