@@ -16,6 +16,7 @@ KNOWN ISSUES:
 -Scrollbar thumb flickers if moving too fast thanks to something strange going on in my directive I haven't figure out yet.
 
 -Projects Header does not hide from page when container behind it is smaller than font size. Have a good idea how to fix it.
+(NOTE: FIXED! YAY!)
 
 -Removed the link to my source code when in mobile view because everything I've tried for it looks terrible. Needs more work.
 
