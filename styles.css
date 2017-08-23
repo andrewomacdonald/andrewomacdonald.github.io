@@ -61,7 +61,6 @@ html, body{
 }
 /*End CSS For name/title, github, etc*/
 
-
 /*CSS For Project Box*/
 .projectContainer {
   background-color: rgba(0, 0, 0, 0.15);
@@ -81,17 +80,31 @@ html, body{
   width: 100%;
 }
 
+
+/*Show scrollbar when scrolling*/
 .projectContent {
   overflow: auto;
 }
-
-#scrollArea::-webkit-scrollbar {
+.projectContent::-webkit-scrollbar {
   background-color: transparent;
 }
-#scrollArea::-webkit-scrollbar-thumb {
+.projectContent::-webkit-scrollbar-thumb {
   border-radius: 2em;
   background-color: rgba(39, 46, 52, 0.20);
 }
+
+/*Hide scrollbar thumb when not scrolling*/
+.projectContentWithoutScroll {
+    overflow: auto;
+}
+.projectContentWithoutScroll::-webkit-scrollbar {
+    background-color:transparent;
+}
+.projectContentWithoutScroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
 .projectThumbnail {
   width: 5em;
   height: 5em;
@@ -99,6 +112,15 @@ html, body{
   margin: 1.25em;
   text-align: center;
 }
+
+.red-background {
+    background-color: red;
+}
+
+.blue-background {
+    background-color: blue;
+}
+
 .projectThumbnail p {
   text-overflow: ellipsis;
   width: 5em;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "en" ng-app="myWebPage">
 <head>
     <meta charset="utf-8">
     <title>Andrew MacDonald: Front End Developer</title>
@@ -12,9 +12,11 @@
 
 <body>
 
+</div>
 <div class="info">
-        <div class="name">Andy MacDonald</div>
-        <div id="title">Front End Developer</div>
+    <div class="name">Andy MacDonald</div>
+    <div class="name"></div>
+    <div id="title">Front End Developer</div>
     <div>
         <a href="https://github.com/andrewomacdonald" target="_blank"><div class="button-box"><i class="fa fa-github fa-3x" aria-hidden="true"></i></div></a>
         <a href="https://www.linkedin.com/in/andrewomacdonald/" target="_blank"><div class="button-box"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></div></a>
@@ -22,24 +24,29 @@
         <a href="assets/AndrewMacDonaldResume.pdf" target="_blank"><div class="button-box"><i class="fa fa-file-text fa-3x" aria-hidden="true"></i></div></a>
     </div>
     <div class = "projectContainer">
-      <div class="name projectHeader">Projects</div>
-      <div class="projectContent" id="scrollArea">
-        <div class="projectThumbnail">
-          <a href="http://lunchline.herokuapp.com" target="_blank">
-            <i class="fa fa-cutlery fa-3x"></i>
-              <p>LunchLine</p>
-          </a>
+        <div class="name projectHeader">Projects</div>
+        <div scrolling-directive ng-class="actuallyScrolling ? 'projectContent' : 'projectContentWithoutScroll'">
+            <div class="projectThumbnail">
+                <a href="http://lunchline.herokuapp.com" target="_blank">
+                    <i class="fa fa-cutlery fa-3x"></i>
+                    <p>LunchLine</p>
+                </a>
+            </div>
+            <div class=projectThumbnail>
+                <a href="http://drivewayshareapp.herokuapp.com" target="_blank">
+                    <i class="fa fa-car fa-3x"></i>
+                    <p>Driveway Share</p>
+                </a>
+            </div>
         </div>
-        <div class=projectThumbnail>
-            <a href="http://drivewayshareapp.herokuapp.com" target="_blank">
-              <i class="fa fa-car fa-3x"></i>
-                <p>Driveway Share</p>
-            </a>
-        </div>
-      </div>
     </div>
 
-<!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Angular Stuff-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/scrollbarController.js"></script>
 </body>
 </html>
