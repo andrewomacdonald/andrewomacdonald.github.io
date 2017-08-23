@@ -25,6 +25,22 @@ html, body{
     padding-bottom: 10em;
 }
 
+#sourceCode {
+    width: 13.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    border-radius: 0 0 0 0.2em;
+    color: black;
+    font-weight: 200;
+    text-align: center;
+    -moz-animation: info-fadein 10s forwards;
+    -webkit-animation: info-fadein 10s forwards;
+    -ms-animation: info-fadein 10s forwards;
+    animation: info-fadein 10s forwards;
+}
 
 /*CSS For name/title and links to github, linkedin, etc*/
 .name{
@@ -78,6 +94,15 @@ html, body{
   top: 0;
   height: 1.5em;
   width: 100%;
+}
+
+.projectHeader button {
+    background-color: transparent;
+    border-radius: 0.5em;
+    margin-left: 0.2em;
+    margin-top: 1px;
+    border: 1px solid black;
+    padding: 0 0.2em 0 0.2em;
 }
 
 

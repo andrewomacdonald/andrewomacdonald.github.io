@@ -10,9 +10,12 @@
     <link rel="shortcut icon" type="image/png" href="assets/ms-icon-310x310.png"/>
 </head>
 
-<body>
+<body ng-controller="appendToContainer">
 
-</div>
+<a href="https://github.com/andrewomacdonald/andrewomacdonald.github.io" target="_blank" id="sourceCode">
+    Check out the Source Code!
+</a>
+
 <div class="info">
     <div class="name">Andy MacDonald</div>
     <div class="name"></div>
@@ -25,7 +28,7 @@
     </div>
     <div class = "projectContainer">
         <div class="name projectHeader">Projects</div>
-        <div scrolling-directive ng-class="actuallyScrolling ? 'projectContent' : 'projectContentWithoutScroll'">
+        <div id="appendToDiv" scrolling-directive ng-class="actuallyScrolling ? 'projectContent' : 'projectContentWithoutScroll'">
             <div class="projectThumbnail">
                 <a href="http://lunchline.herokuapp.com" target="_blank">
                     <i class="fa fa-cutlery fa-3x"></i>
@@ -38,9 +41,14 @@
                     <p>Driveway Share</p>
                 </a>
             </div>
-        </div>
+            <!--<div ng-repeat="placeholder in placeholders">-->
+                <!--<a href="{{placeholder.link}}" target="_blank">-->
+                    <!--<i class="{{placeholder.icon"></i>-->
+                    <!--<p>{{placeholder.text}}</p>-->
+                <!--</a>-->
+            <!--</div>-->
     </div>
-
+</div>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -48,5 +56,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="Scripts/app.js"></script>
     <script src="Scripts/scrollbarDirective.js"></script>
+    <script src="Scripts/appendToContainer.js"></script>
 </body>
 </html>
