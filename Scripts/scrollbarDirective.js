@@ -20,7 +20,15 @@
                 $timeout(function () {
                     $scope.actuallyScrolling = false;
                 }, 2000);
-            })
+            });
+
+            $(window).resize(function() {
+                if($element.height() === 0) {
+                    $('.projectContainer').css('overflow', 'hidden');
+                } else if($element.height() > 0) {
+                    $('.projectContainer').css('visibility', 'visible');
+                }
+            });
         }
         return directive;
     }
