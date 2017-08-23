@@ -2,7 +2,7 @@ A personal webpage utilizing CSS, Bootstrap and HTML with links to all my releva
 
 UPDATE:
 
--Finally got Angular directive that hides scrollbar when not scrolling and shows it when scrolling (kind of like how the iPhone does it) working. Small bug with it (listed in known issues section) that I haven't figured out yet.
+-Finally got Angular directive that hides scrollbar when not scrolling and shows it when scrolling (kind of like how the iPhone does it) working. Small bug with it (listed in known issues section) that I haven't figured out yet. You can see it in action now if you shrink the size of your browser window and then scroll up/down inside the project container.
 
  -Added a link to the source code on the top left of the page.
 
