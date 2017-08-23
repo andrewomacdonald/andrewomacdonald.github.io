@@ -4,26 +4,24 @@
         .module('myWebPage')
         .directive('scrollingDirective', scrollingDirective);
 
-    function scrollingDirective() {
+    function scrollingDirective($timeout) {
         var directive = {
             restrict: 'AE',
             link: link
         };
-        return directive;
 
-        function link (scope, element, attributes) {
-            scope.actuallyScrolling = false;
+        function link ($scope, $element, $attributes) {
+            $scope.actuallyScrolling = false;
             var timer;
-            element.bind('scroll', function () {
-                scope.actuallyScrolling = true;
-                scope.$apply();
-                clearTimeout(timer);
-                setTimeout(function () {
-                    scope.actuallyScrolling = false;
-                    scope.$apply();
+            $element.bind('scroll', function () {
+                $scope.actuallyScrolling = true;
+                $scope.$apply();
+                $timeout.cancel(timer);
+                $timeout(function () {
+                    $scope.actuallyScrolling = false;
                 }, 2000);
             })
         }
-
+        return directive;
     }
 })();
