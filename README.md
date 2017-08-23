@@ -1,4 +1,4 @@
-A personal webpage utilizing CSS, Bootstrap and HTML with links to all my relevant information.
+A personal webpage utilizing CSS, Bootstrap and HTML with links to all my relevant information. Can be seen at andrewomacdonald.com.
 
 UPDATE:
 
