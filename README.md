@@ -17,3 +17,5 @@ KNOWN ISSUES:
 
 -Projects Header does not hide from page when container behind it is smaller than font size. Have a good idea how to fix it.
 
+-Removed the link to my source code when in mobile view because everything I've tried for it looks terrible. Needs more work.
+

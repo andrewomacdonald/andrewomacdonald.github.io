@@ -28,20 +28,22 @@ html, body{
 #sourceCode {
     width: 13.5em;
     background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
     top: 0;
-    right: 0;
     font-size: 2em;
-    border-radius: 0 0 0 0.2em;
+    border-radius: 0 0 0.2em 0;
     color: black;
     font-weight: 200;
     text-align: center;
+    padding: 0 0.2em 0 0.2em;
     -moz-animation: info-fadein 10s forwards;
     -webkit-animation: info-fadein 10s forwards;
     -ms-animation: info-fadein 10s forwards;
     animation: info-fadein 10s forwards;
+    margin-bottom: 1em;
 }
-
+#sourceCode:hover {
+    text-decoration: none;
+}
 /*CSS For name/title and links to github, linkedin, etc*/
 .name{
     font-size: 2.5em;
@@ -176,6 +178,10 @@ html, body{
     #title {
         font-size: 1.5em;
         font-weight: 160;
+    }
+
+    #sourceCode {
+        visibility: hidden;
     }
 
     .projectContainer {
